@@ -1,25 +1,25 @@
 import math
 
-A = int(input("Введите переменную А: "))
-B = int(input("Введите переменную B: "))
-C = int(input("Введите переменную C: "))
+A = int(input("Enter variable A: "))
+B = int(input("Enter variable B: "))
+C = int(input("Enter variable C: "))
 
 D = B * B - 4 * A * C
 
-if C == 0 and A==0:
-    x=0
-    print(x)
+if C == 0 and A == 0:
+    X = 0
+    print(X)
 elif A == 0 and B == 0:
     print("")
 elif A == 0 and B > 0:
-    x = -C / B
-    print(x)
+    X = -C / B
+    print(X)
 elif D > 0:
-    x1=(-B + math.sqrt(D))/(2 * A)
-    x2=(-B - math.sqrt(D))/(2 * A)
-    print(x1, x2)
+    X1 = (-B + math.sqrt(D)) / (2 * A)
+    X2 = (-B - math.sqrt(D)) / (2 * A)
+    print(X1, X2)
 elif D == 0:
-    x = -B / (2 * A)
-    print(x)
+    X = -B / (2 * A)
+    print(X)
 else:
     print("")
